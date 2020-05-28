@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="testacademy.list">
+      <field name="name">testacademy list</field>
+      <field name="model">testacademy.testacademy</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="testacademy.action_window">
+      <field name="name">testacademy window</field>
+      <field name="res_model">testacademy.testacademy</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="testacademy.action_server">
+      <field name="name">testacademy server</field>
+      <field name="model_id" ref="model_testacademy_testacademy"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="testacademy" id="testacademy.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="testacademy.menu_1" parent="testacademy.menu_root"/>
+    <menuitem name="Menu 2" id="testacademy.menu_2" parent="testacademy.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="testacademy.menu_1_list" parent="testacademy.menu_1"
+              action="testacademy.action_window"/>
+    <menuitem name="Server to list" id="testacademy" parent="testacademy.menu_2"
+              action="testacademy.action_server"/>
+    -->
+  </data>
+</odoo>
